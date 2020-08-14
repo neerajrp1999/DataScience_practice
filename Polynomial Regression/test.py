@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-file=pd.read_csv('/home/thispc/Downloads/P14-Part2-Regression/Section 8 - Polynomial Regression/Python/Position_Salaries.csv')
+file=pd.read_csv('Position_Salaries.csv')
 
 x=file.iloc[:,1:-1].values
 y=file.iloc[:,-1].values
