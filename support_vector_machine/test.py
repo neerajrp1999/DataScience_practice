@@ -44,7 +44,7 @@ ax1.contourf(X1, X2, model.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape
 for i, j in enumerate(np.unique(y_set)):
     ax1.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                 c = ListedColormap(('red', 'green'))(i), label = j)
-ax1.set_title('K-NN (Training set)')
+ax1.set_title('SVM (Training set)')
 ax1.set_xlabel('Age')
 ax1.set_ylabel('Estimated Salary')
 
@@ -60,6 +60,6 @@ ax2.contourf(X1, X2, model.predict(np.array([X1.ravel(), X2.ravel()]).T).reshape
 for i, j in enumerate(np.unique(y_set)):
     ax2.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                 c = ListedColormap(('red', 'green'))(i), label = j)
-ax2.set_title('K-NN (Test set)')
+ax2.set_title('SVM (Test set)')
 ax2.set_xlabel('Age')
 ax2.set_ylabel('Estimated Salary')
